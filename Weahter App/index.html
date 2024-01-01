@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="container mx-auto mt-8 p-4 max-w-md">
+      <div class="bg-white p-8 rounded-md shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Weather App</h1>
+
+        <!-- Location Input -->
+        <div class="mb-4">
+          <label for="location" class="block text-sm font-medium text-gray-600"
+            >Enter Location</label
+          >
+          <form action="" id="form">
+            <input
+              type="text"
+              id="location4"
+              name="location"
+              class="mt-1 p-2 w-full border rounded-md"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <!-- Weather Details -->
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Current Weather</h2>
+
+          <!-- Weather Icon -->
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Weather Icon"
+            class="mb-2"
+          />
+
+          <!-- Temperature and Description -->
+          <p class="text-lg font-bold" id="tempreture"></p>
+          <p class="text-gray-600">Partly Cloudy</p>
+
+          <!-- Additional Weather Details (Humidity, Wind, etc.) -->
+          <div class="mt-4">
+            <p class="text-gray-600" id="humidity"></p>
+            <p class="text-gray-600" id="Wind"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+      <div class="container mx-auto text-center">&copy; 2023 Weather App</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
